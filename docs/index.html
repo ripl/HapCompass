@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="HapCompass: A Rotational Haptic Device for Contact-Rich Robotic Teleoperation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HapCompass: A Rotational Haptic Device for Contact-Rich Robotic Teleoperation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">HapCompass: A Rotational Haptic Device for Contact-Rich Robotic
+              Teleoperation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=0XbUhDUAAAAJ&hl=en">Xiangshan
+                  Tan</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=DeQM4Z4AAAAJ&hl=en">Jingtian
+                  Ji</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=5z1iJjoAAAAJ&hl=en">Tianchong Jiang</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://plopes.org/">Pedro Lopes</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://home.ttic.edu/~mwalter/">Matthew R. Walter</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Toyota Technological Institute at Chicago (TTIC),</span>
+              <span class="author-block"><sup>2</sup>University of Chicago</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Paper Link. -->
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- 3D Design Link. -->
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-cube"></i>
+                    </span>
+                    <span>3D Design</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser Image & Device Video -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/Teaser_image_v2_cropped.png" style="width: 100%; margin-bottom: 30px;"
+          alt="Teaser Image" />
+        <h2 class="subtitle has-text-centered" style="margin-bottom: 50px;">
+          HapCompass teleoperation system. (a) An operator controls the robot via hand tracking while wearing our novel
+          HapCompass device. (b) The robot arm executes the manipulation commands. (c) We evaluate the system on three
+          contact-rich tasks: Key Insertion, USB Insertion, and Spaghetti Probing, with (left) our method achieving
+          higher success than (right) baseline methods.
+        </h2>
+        <video id="device-video" autoplay muted loop playsinline height="100%" style="width: 100%;"
+          poster="https://via.placeholder.com/1000x500?text=Device+Structure+Video+Placeholder">
+          <source src="#" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered mt-4">
+          Device Structure Video
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abstract -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              The contact-rich nature of manipulation makes it a significant challenge for robotic teleoperation. While
+              haptic feedback is critical for contact-rich tasks, providing intuitive directional cues within wearable,
+              vision-tracking-based teleoperation interfaces remains a bottleneck. Existing solutions, such as
+              non-directional vibrations from handheld controllers, provide limited information, while vibrotactile
+              arrays can be challenging due to perceptual interference from their many actuators. To address these
+              limitations, we propose HAPCOMPASS, a novel, low-cost wearable haptic device that renders 2D directional
+              cues by mechanically rotating a single linear resonant actuator (LRA). We evaluated HapCompass's ability
+              to convey directional cues to human operators and demonstrated that it increased the success rate,
+              decreased the completion time and the maximum contact force for teleoperated manipulation tasks when
+              compared to vision-only and non-directional feedback baselines. We have released the full design of the
+              HapCompass device along with the code that implements our teleoperation interface.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teleoperation System Structure -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Teleoperation System Structure</h2>
+          <div class="content has-text-justified">
+            <p>
+              HapCompass provides a complete teleoperation system for contact-rich robotic manipulation comprising three
+              core components: a wearable haptic device, an architecture for data and control flow, and a rendering
+              algorithm that translates robot sensor data into directional tactile cues.
+            </p>
+          </div>
+          <img src="static/images/SystemV2.png" alt="Teleoperation System Structure Image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiment 1: Directional Rendering Performance -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Experiment 1: Directional Rendering Performance</h2>
+          <div class="content has-text-justified">
+            <p>
+              <strong>Objective:</strong> To quantitatively measure whether participants can understand directional
+              information rendered by the HapCompass device.
+            </p>
+            <p>
+              <strong>Task:</strong> Participants performed two direction-identification tasks: (1) a
+              four-alternative forced-choice (4-AFC) task involving the four cardinal directions (up, down, left,
+              right); and (2) a more challenging eight-alternative forced-choice (8-AFC) task that also included the
+              four intercardinal directions. The results show that participants can interpret the directional cues from
+              the HapCompass device with accuracies significantly above chance level in both tasks.
+            </p>
+          </div>
+          <img src="static/images/combined_radar_chart-2.png" alt="Directional Rendering Performance Image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiment 2: Teleoperation Performance -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Experiment 2: Teleoperation Performance</h2>
+          <div class="content has-text-justified" style="max-width: 80%; margin: 0 auto;">
+            <p>
+              <strong>Objective:</strong> Evaluate the effectiveness of the HapCompass system in improving operator
+              performance during contact-rich manipulation tasks.
+            </p>
+            <p>
+              <strong>Tasks:</strong> We designed three tasks to assess performance across different
+              challenges in contact-rich manipulation: Key Insertion, USB Insertion, and Spaghetti Probing.
+            </p>
+          </div>
+
+          <!-- <div class="columns is-centered mt-5">
+            <div class="column">
+              <img src="https://via.placeholder.com/500x300?text=Teleoperation+Result+1"
+                alt="Teleoperation Result Image 1" />
+            </div>
+            <div class="column">
+              <img src="https://via.placeholder.com/500x300?text=Teleoperation+Result+2"
+                alt="Teleoperation Result Image 2" />
+            </div>
+          </div> -->
+
+          <div class="columns is-centered mt-5">
+            <div class="column">
+              <img src="static/images/Table1.png" alt="Teleoperation Performance Table" />
+            </div>
+          </div>
+
+          <div class="columns is-centered mt-5">
+            <div class="column is-four-fifths">
+              <video id="teleop-video" autoplay controls muted loop playsinline width="100%"
+                poster="https://via.placeholder.com/1000x500?text=Teleoperation+Performance+Video+Placeholder">
+                <source src="#" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BibTeX -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{tan2026hapcompass,
+  author    = {Tan, Xiangshan and Ji, Jingtian and Jiang, Tianchong and Lopes, Pedro and Walter, Matthew R.},
+  title     = {HapCompass: A Rotational Haptic Device for Contact-Rich Robotic Teleoperation},
+  booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+  year      = {2026},
+}</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          This website template is based on <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
