@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / Web
+node_modules/
+dist/
+build/
+.parcel-cache
+
+# Logs and temp
+*.log
+logs/
+tmp/
+temp/

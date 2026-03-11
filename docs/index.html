@@ -95,6 +95,12 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
+        <video id="device-video" autoplay muted loop playsinline height="100%" style="width: 100%;">
+          <source src="static/videos/HapCompass-hardware.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered mt-4">
+          Structure and Working Principle of the HapCompass Device.
+        </h2>
         <img src="static/images/Teaser_image_v2_cropped.png" style="width: 100%; margin-bottom: 30px;"
           alt="Teaser Image" />
         <h2 class="subtitle has-text-centered" style="margin-bottom: 50px;">
@@ -102,13 +108,6 @@
           HapCompass device. (b) The robot arm executes the manipulation commands. (c) We evaluate the system on three
           contact-rich tasks: Key Insertion, USB Insertion, and Spaghetti Probing, with (left) our method achieving
           higher success than (right) baseline methods.
-        </h2>
-        <video id="device-video" autoplay muted loop playsinline height="100%" style="width: 100%;"
-          poster="https://via.placeholder.com/1000x500?text=Device+Structure+Video+Placeholder">
-          <source src="#" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered mt-4">
-          Device Structure Video
         </h2>
       </div>
     </div>
@@ -123,16 +122,16 @@
           <div class="content has-text-justified">
             <p>
               The contact-rich nature of manipulation makes it a significant challenge for robotic teleoperation. While
-              haptic feedback is critical for contact-rich tasks, providing intuitive directional cues within wearable,
-              vision-tracking-based teleoperation interfaces remains a bottleneck. Existing solutions, such as
-              non-directional vibrations from handheld controllers, provide limited information, while vibrotactile
-              arrays can be challenging due to perceptual interference from their many actuators. To address these
-              limitations, we propose HAPCOMPASS, a novel, low-cost wearable haptic device that renders 2D directional
-              cues by mechanically rotating a single linear resonant actuator (LRA). We evaluated HapCompass's ability
-              to convey directional cues to human operators and demonstrated that it increased the success rate,
-              decreased the completion time and the maximum contact force for teleoperated manipulation tasks when
-              compared to vision-only and non-directional feedback baselines. We have released the full design of the
-              HapCompass device along with the code that implements our teleoperation interface.
+              haptic feedback is critical for contact-rich tasks, providing intuitive directional cues within wearable
+              teleoperation interfaces remains a bottleneck. Existing solutions, such as non-directional vibrations from
+              handheld controllers, provide limited information, while vibrotactile arrays are prone to perceptual
+              interference. To address these limitations, we propose HapCompass, a novel, low-cost wearable haptic
+              device that renders 2D directional cues by mechanically rotating a single linear resonant actuator (LRA).
+              We evaluated HapCompass's ability to convey directional cues to human operators and showed that it
+              increased the success rate, decreased the completion time and the maximum contact force for teleoperated
+              manipulation tasks when compared to vision-only and non-directional feedback baselines. Furthermore, we
+              conducted a preliminary imitation-learning evaluation, suggesting that the directional feedback provided
+              by HapCompass enhances the quality of demonstration data and, in turn, the trained policy.
             </p>
           </div>
         </div>
