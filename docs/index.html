@@ -95,7 +95,7 @@
   <section class="section tldr-section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column">
           <!-- <h2 class="title is-4">TL;DR</h2> -->
           <div class="content has-text-justified">
             <p>
@@ -119,71 +119,26 @@
         <video id="device-video" autoplay muted loop playsinline height="100%" style="width: 100%;">
           <source src="static/videos/HapCompass-structure.mp4" type="video/mp4">
         </video>
-        <h2 class="subtitle has-text-centered mt-4">
+        <p class="figure-note has-text-centered">
           Structure and Working Principle of the HapCompass Device.
-        </h2>
-        <img src="static/images/Teaser_image_v2_cropped.png" style="width: 100%; margin-top: 24px; margin-bottom: 30px;"
+        </p>
+        <img src="static/images/Teaser_image_v2_cropped.png" style="width: 100%; margin-top: 24px; margin-bottom: 5px;"
           alt="Teaser Image" />
-        <h2 class="subtitle has-text-centered" style="margin-bottom: 50px;">
+        <p class="figure-note has-text-centered" style="margin-bottom: 10px;">
           HapCompass teleoperation system. (a) An operator controls the robot via hand tracking while wearing our novel
           HapCompass device. (b) The robot arm executes the manipulation commands. (c) We evaluate the system on three
           contact-rich tasks: Key Insertion, USB Insertion, and Spaghetti Probing, with (left) our method achieving
           higher success than (right) baseline methods.
-        </h2>
+        </p>
       </div>
     </div>
   </section>
-
-  <!-- Abstract -->
-  <!-- <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              The contact-rich nature of manipulation makes it a significant challenge for robotic teleoperation. While
-              haptic feedback is critical for contact-rich tasks, providing intuitive directional cues within wearable
-              teleoperation interfaces remains a bottleneck. Existing solutions, such as non-directional vibrations from
-              handheld controllers, provide limited information, while vibrotactile arrays are prone to perceptual
-              interference. To address these limitations, we propose HapCompass, a novel, low-cost wearable haptic
-              device that renders 2D directional cues by mechanically rotating a single linear resonant actuator (LRA).
-              We evaluated HapCompass's ability to convey directional cues to human operators and showed that it
-              increased the success rate, decreased the completion time and the maximum contact force for teleoperated
-              manipulation tasks when compared to vision-only and non-directional feedback baselines. Furthermore, we
-              conducted a preliminary imitation-learning evaluation, suggesting that the directional feedback provided
-              by HapCompass enhances the quality of demonstration data and, in turn, the trained policy.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Teleoperation System Structure -->
-  <!-- <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Teleoperation System Structure</h2>
-          <div class="content has-text-justified">
-            <p>
-              HapCompass provides a complete teleoperation system for contact-rich robotic manipulation comprising three
-              core components: a wearable haptic device, an architecture for data and control flow, and a rendering
-              algorithm that translates robot sensor data into directional tactile cues.
-            </p>
-          </div>
-          <img src="static/images/SystemV2.png" alt="Teleoperation System Structure Image" />
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <!-- How It Works -->
   <section class="section how-it-works-section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column">
           <h2 class="title is-3">How It Works</h2>
         </div>
       </div>
@@ -198,9 +153,9 @@
           <h3 class="title is-4">1. Asymmetric Vibration Creates Directional Cues</h3>
           <div class="content has-text-justified">
             <p>
-             The actuator is driven by an asymmetric waveform (unlike  a sinusoidal waveform which is symmetric), so that the
+             The actuator is driven by an asymmetric waveform (unlike a sinusoidal waveform), so that the
               vibration has a higher peak acceleration in one direction than in the opposite direction.
-              This asymmetric vibration creates an illusory <em>pulling</em> sensation towards the direction of the higher peak acceleration on the fingertip.
+              This asymmetric vibration creates an <strong>illusory pulling sensation</strong> towards the direction of the higher peak acceleration on the fingertip.
             </p>
             <p>
               A decoupled two-part housing design consisting of an inner (yellow) and an outer (blue) shell allows HapCompass to efficiently transmit vibrational energy to the user's fingertip, while isolating it from the device's main structure.
@@ -236,7 +191,7 @@
           <div class="content has-text-justified">
             <p>
               During teleoperation, the robot's tactile sensors measure changes in contact force. This delta force vector is transformed into the device frame, and then
-              projected onto the device's 2D feedback plane. The direction and magnitude of the projected  2D vector control the servo angle and LRA vibration amplitude, respectively.
+              projected onto the device's 2D feedback plane. The direction and magnitude of the resulting  2D vector control the servo angle and LRA vibration amplitude, respectively.
             </p>
           </div>
         </div>
@@ -248,14 +203,14 @@
   <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column">
           <h2 class="title is-3">Experiment 1: Directional Rendering Performance</h2>
           <div class="content has-text-justified">
             <p>
               We evaluated whether users can interpret directional cues rendered by HapCompass using 4-AFC and 8-AFC
               direction-identification tasks. Participants achieved <strong>84.4%</strong> accuracy in the 4-AFC task
               and <strong>67.2%</strong> accuracy in the 8-AFC task, both substantially above chance, showing that the
-              device can reliably convey directional feedback across cardinal and intercardinal directions.
+              device can effectively convey directional feedback overall.
             </p>
           </div>
 
@@ -263,7 +218,7 @@
             <div class="column is-4">
               <img class="experiment-figure directions-figure" src="static/images/directions.png"
                 alt="Direction labels on the HapCompass device" />
-              <p class="figure-note">Directional labels used in the perceptual study.</p>
+              <p class="figure-note">Directional labels used in the experiment.</p>
             </div>
             <div class="column is-8">
               <img class="experiment-figure" src="static/images/combined_radar_chart-2.png"
@@ -280,42 +235,69 @@
   <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column">
           <h2 class="title is-3">Experiment 2: Teleoperation Performance</h2>
-          <div class="content has-text-justified" style="max-width: 80%; margin: 0 auto;">
+          <div class="content has-text-justified">
             <p>
-              <strong>Objective:</strong> Evaluate the effectiveness of the HapCompass system in improving operator
-              performance during contact-rich manipulation tasks.
-            </p>
-            <p>
-              <strong>Tasks:</strong> We designed three tasks to assess performance across different
-              challenges in contact-rich manipulation: Key Insertion, USB Insertion, and Spaghetti Probing.
+              We evaluated HapCompass on three contact-rich teleoperation tasks: Key Insertion, USB Insertion, and
+              Spaghetti Probing. Across these tasks, directional tactile feedback improved success rates and generally
+              reduced peak contact forces and bending torques compared with vision-only and non-directional tactile baselines.
             </p>
           </div>
 
-          <!-- <div class="columns is-centered mt-5">
+          <div class="columns is-centered mt-2">
             <div class="column">
-              <img src="https://via.placeholder.com/500x300?text=Teleoperation+Result+1"
-                alt="Teleoperation Result Image 1" />
-            </div>
-            <div class="column">
-              <img src="https://via.placeholder.com/500x300?text=Teleoperation+Result+2"
-                alt="Teleoperation Result Image 2" />
-            </div>
-          </div> -->
-
-          <div class="columns is-centered mt-5">
-            <div class="column">
-              <img src="static/images/Table1.png" alt="Teleoperation Performance Table" />
+              <img src="static/images/Table-1.png" alt="Teleoperation Performance Table" />
             </div>
           </div>
 
-          <div class="columns is-centered mt-5">
-            <div class="column is-four-fifths">
-              <video id="teleop-video" autoplay controls muted loop playsinline width="100%"
-                poster="https://via.placeholder.com/1000x500?text=Teleoperation+Performance+Video+Placeholder">
-                <source src="#" type="video/mp4">
+          <div class="columns is-centered mt-2">
+            <div class="column">
+              <img src="static/images/key_insertion_boxes_112_correctFont_padding.png" alt="Key Insertion Performance" />
+              <p class="figure-note has-text-centered">
+                Teleoperation performance on the <strong>Key Insertion</strong> task
+                across four teleoperation conditions.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="columns is-centered mt-3">
+            <div class="column">
+
+              <video id="teleop-video" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/teleoperation-demos.mp4" type="video/mp4">
               </video>
+              <p class="figure-note has-text-centered">
+                Demonstrations of the three contact-rich teleoperation tasks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiment 3: Imitation Learning Evaluation -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Experiment 3: Imitation Learning Evaluation</h2>
+          <div class="content has-text-justified">
+            <p>
+              We conducted a preliminary imitation-learning evaluation on a simplified Key Insertion task. Policies
+              trained on demonstrations collected with directional tactile feedback achieved higher rollout success
+              and lower peak forces and bending torques than policies trained on demonstrations collected with
+              non-directional controller tactile feedback, suggesting that HapCompass can improve demonstration
+              quality for downstream learning.
+            </p>
+          </div>
+
+          <div class="columns is-centered mt-5">
+            <div class="column">
+              <img src="static/images/Table-2.png" alt="Imitation learning evaluation results" />
             </div>
           </div>
         </div>
