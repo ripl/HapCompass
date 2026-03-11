@@ -2,6 +2,16 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.tldr-section {
+  padding-top: 0.0rem;
+  padding-bottom: 1.5rem;
+}
+
+.tldr-section .content p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 
 .footer .icon-link {
     font-size: 25px;
@@ -25,6 +35,51 @@ body {
 
 .teaser {
   font-family: 'Google Sans', sans-serif;
+}
+
+.how-it-works-section {
+  padding-top: 2rem;
+}
+
+.how-it-works-intro {
+  margin-bottom: 2rem;
+  color: #4a4a4a;
+}
+
+.how-it-works-row {
+  margin-bottom: 2.5rem;
+}
+
+.how-it-works-row:last-child {
+  margin-bottom: 0;
+}
+
+.how-it-works-media {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.experiment-figure-row {
+  margin-top: 1.5rem;
+}
+
+.experiment-figure {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.directions-figure {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.figure-note {
+  margin-top: 0.75rem;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 

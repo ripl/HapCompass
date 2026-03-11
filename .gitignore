@@ -19,3 +19,5 @@ build/
 logs/
 tmp/
 temp/
+
+*.tex

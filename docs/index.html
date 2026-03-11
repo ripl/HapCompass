@@ -67,7 +67,7 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://github.com/ripl/HapCompass" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -76,7 +76,7 @@
                 </span>
                 <!-- 3D Design Link. -->
                 <span class="link-block">
-                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://github.com/ripl/HapCompass" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-cube"></i>
                     </span>
@@ -91,17 +91,38 @@
     </div>
   </section>
 
+  <!-- TL;DR -->
+  <section class="section tldr-section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <!-- <h2 class="title is-4">TL;DR</h2> -->
+          <div class="content has-text-justified">
+            <p>
+              <strong>TL;DR:</strong> <strong><em>HapCompass</em></strong> is a wearable haptic device for contact-rich robotic teleoperation that renders
+              2D directional cues by <strong>mechanically rotating a single linear resonant actuator (LRA)</strong>, whose asymmetric
+              vibration provides directional haptic feedback. By mapping the robot's tactile measurements
+              into directional feedback for the operator, it improves
+              teleoperation performance on contact-rich tasks and leads to higher-quality demonstrations for
+              imitation learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Teaser Image & Device Video -->
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
         <video id="device-video" autoplay muted loop playsinline height="100%" style="width: 100%;">
-          <source src="static/videos/HapCompass-hardware.mp4" type="video/mp4">
+          <source src="static/videos/HapCompass-structure.mp4" type="video/mp4">
         </video>
         <h2 class="subtitle has-text-centered mt-4">
           Structure and Working Principle of the HapCompass Device.
         </h2>
-        <img src="static/images/Teaser_image_v2_cropped.png" style="width: 100%; margin-bottom: 30px;"
+        <img src="static/images/Teaser_image_v2_cropped.png" style="width: 100%; margin-top: 24px; margin-bottom: 30px;"
           alt="Teaser Image" />
         <h2 class="subtitle has-text-centered" style="margin-bottom: 50px;">
           HapCompass teleoperation system. (a) An operator controls the robot via hand tracking while wearing our novel
@@ -114,7 +135,7 @@
   </section>
 
   <!-- Abstract -->
-  <section class="section">
+  <!-- <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
@@ -137,10 +158,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Teleoperation System Structure -->
-  <section class="section">
+  <!-- <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
@@ -156,6 +177,71 @@
         </div>
       </div>
     </div>
+  </section> -->
+
+  <!-- How It Works -->
+  <section class="section how-it-works-section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">How It Works</h2>
+        </div>
+      </div>
+
+      <div class="columns is-vcentered how-it-works-row">
+        <div class="column is-6">
+          <video class="how-it-works-media" autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/asymmetric-vibration.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-6">
+          <h3 class="title is-4">1. Asymmetric Vibration Creates Directional Cues</h3>
+          <div class="content has-text-justified">
+            <p>
+             The actuator is driven by an asymmetric waveform (unlike  a sinusoidal waveform which is symmetric), so that the
+              vibration has a higher peak acceleration in one direction than in the opposite direction.
+              This asymmetric vibration creates an illusory <em>pulling</em> sensation towards the direction of the higher peak acceleration on the fingertip.
+            </p>
+            <p>
+              A decoupled two-part housing design consisting of an inner (yellow) and an outer (blue) shell allows HapCompass to efficiently transmit vibrational energy to the user's fingertip, while isolating it from the device's main structure.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-vcentered how-it-works-row">
+        <div class="column is-6">
+          <video class="how-it-works-media" autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/rotation.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-6">
+          <h3 class="title is-4">2. A Servo Rotates One LRA to Cover the 2D Plane</h3>
+          <div class="content has-text-justified">
+            <p>
+              The LRA is mounted inside a rotor that is driven by a servo motor through a driving belt.
+              By rotating the rotor to different angles, HapCompass can render directional cues across the 2D feedback plane.
+              This design avoids relying on multiple fixed, orthogonal LRAs, as simultaneously activating several LRAs can lead to perceptual interference.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-vcentered how-it-works-row">
+        <div class="column is-6">
+          <img class="how-it-works-media" src="static/images/tactile-mapping.png" alt="HapCompass tactile mapping overview" />
+        </div>
+        <div class="column is-6">
+          <h3 class="title is-4">3. Robot Contact Forces Are Mapped Into Device Feedback</h3>
+          <div class="content has-text-justified">
+            <p>
+              During teleoperation, the robot's tactile sensors measure changes in contact force. This delta force vector is transformed into the device frame, and then
+              projected onto the device's 2D feedback plane. The direction and magnitude of the projected  2D vector control the servo angle and LRA vibration amplitude, respectively.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Experiment 1: Directional Rendering Performance -->
@@ -166,18 +252,25 @@
           <h2 class="title is-3">Experiment 1: Directional Rendering Performance</h2>
           <div class="content has-text-justified">
             <p>
-              <strong>Objective:</strong> To quantitatively measure whether participants can understand directional
-              information rendered by the HapCompass device.
-            </p>
-            <p>
-              <strong>Task:</strong> Participants performed two direction-identification tasks: (1) a
-              four-alternative forced-choice (4-AFC) task involving the four cardinal directions (up, down, left,
-              right); and (2) a more challenging eight-alternative forced-choice (8-AFC) task that also included the
-              four intercardinal directions. The results show that participants can interpret the directional cues from
-              the HapCompass device with accuracies significantly above chance level in both tasks.
+              We evaluated whether users can interpret directional cues rendered by HapCompass using 4-AFC and 8-AFC
+              direction-identification tasks. Participants achieved <strong>84.4%</strong> accuracy in the 4-AFC task
+              and <strong>67.2%</strong> accuracy in the 8-AFC task, both substantially above chance, showing that the
+              device can reliably convey directional feedback across cardinal and intercardinal directions.
             </p>
           </div>
-          <img src="static/images/combined_radar_chart-2.png" alt="Directional Rendering Performance Image" />
+
+          <div class="columns is-vcentered experiment-figure-row">
+            <div class="column is-4">
+              <img class="experiment-figure directions-figure" src="static/images/directions.png"
+                alt="Direction labels on the HapCompass device" />
+              <p class="figure-note">Directional labels used in the perceptual study.</p>
+            </div>
+            <div class="column is-8">
+              <img class="experiment-figure" src="static/images/combined_radar_chart-2.png"
+                alt="Directional rendering performance results" />
+              <p class="figure-note">Confusion-matrix radar plots for the 4-AFC and 8-AFC direction tasks.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
