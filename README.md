@@ -31,12 +31,12 @@
 ### Webpage
 
 - [x] ~~Build the project webpage (Mar 11)~~
-- [x] ~~Upload a policy rollout video (Mar 31)~~
+- [ ] Upload a policy rollout video
 - [ ] Add an arXiv link
 
 ### Hardware
 
-- [ ] Upload the Fusion source design and STL files
+- [x] ~~Upload the Fusion source design and STL files~~
 - [ ] Write the BOM and assembly instructions
 
 ### Software
