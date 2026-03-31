@@ -26,6 +26,7 @@
 
 ## Overview
 ***HapCompass*** is a wearable haptic device for contact-rich robotic teleoperation that renders 2D directional cues by **mechanically rotating a single linear resonant actuator (LRA)**, whose asymmetric vibration provides directional haptic feedback. By mapping the robot's tactile measurements into directional feedback for the operator, it improves teleoperation performance on contact-rich tasks and leads to higher-quality demonstrations for imitation learning.
+
 ## TODO
 
 ### Webpage
@@ -36,14 +37,19 @@
 
 ### Hardware
 
-- [x] ~~Upload the Fusion source design and STL files~~
-- [ ] Write the BOM and assembly instructions
+- [x] ~~Upload the Fusion source design and STL files (Mar 31)~~
+- [x] ~~Write BOM (Mar 31)~~
+- [ ] Write assembly instructions
 
 ### Software
 
 - [ ] Upload the code for device control
 - [ ] Upload the code for tactile mapping
 - [ ] Upload the code for teleoperation
+
+## Hardware
+
+Bill of materials (BOM), editable source design (.f3z), and printable parts (.stl) can be found in the [`hardware/`](hardware/) directory.
 
 
 ## BibTeX
