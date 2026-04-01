@@ -33,7 +33,7 @@
 
 - [x] ~~Build the project webpage (Mar 11)~~
 - [ ] Upload a policy rollout video
-- [ ] Add an arXiv link
+- [x] ~~Add an arXiv link (Apr 1)~~
 
 ### Hardware
 
