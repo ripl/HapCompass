@@ -18,7 +18,7 @@
 
   <p>
     <a href="https://ripl.github.io/HapCompass/">Project Page</a> |
-    <a href="docs/static/files/HapCompass__A_Rotational_Haptic_Device_for_Contact_Rich_Robotic_Teleoperation.pdf">Paper</a>
+    <a href="https://arxiv.org/abs/2603.30042">Paper</a>
   </p>
 </div>
 
