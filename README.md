@@ -18,7 +18,8 @@
 
   <p>
     <a href="https://ripl.github.io/HapCompass/">Project Page</a> |
-    <a href="https://arxiv.org/abs/2603.30042">Paper</a>
+    <a href="https://arxiv.org/abs/2603.30042">Paper</a> |
+    <a href="https://github.com/ripl/HapCompass/tree/main/hardware">Hardware</a>
   </p>
 </div>
 
