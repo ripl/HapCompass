@@ -39,7 +39,8 @@
 
 - [x] ~~Upload the Fusion source design and STL files (Mar 31)~~
 - [x] ~~Write BOM (Mar 31)~~
-- [ ] Write assembly instructions
+- [x] ~~Write assembly instructions (Apr 1)~~
+- [ ] Write "Modifying Source Design"
 
 ### Software
 
@@ -49,7 +50,7 @@
 
 ## Hardware
 
-Bill of materials (BOM), editable source design (.f3z), and printable parts (.stl) can be found in the [`hardware/`](hardware/) directory.
+Bill of materials (BOM), assembly instructions, editable source design (.f3z), and printable parts (.stl) can be found in the [`hardware/`](hardware/) directory.
 
 
 ## BibTeX
