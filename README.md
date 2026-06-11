@@ -41,13 +41,15 @@
 - [x] ~~Upload the Fusion source design and STL files (Mar 31)~~
 - [x] ~~Write BOM (Mar 31)~~
 - [x] ~~Write assembly instructions (Apr 1)~~
-- [ ] Write "Modifying Source Design"
+<!-- - [ ] Write "Modifying Source Design" -->
 
+<!--
 ### Software
 
 - [ ] Upload the code for device control
 - [ ] Upload the code for tactile mapping
 - [ ] Upload the code for teleoperation
+-->
 
 ## Hardware
 
