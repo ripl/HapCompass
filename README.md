@@ -32,15 +32,15 @@
 
 ### Webpage
 
-- [x] ~~Build the project webpage (Mar 11)~~
-- [ ] Upload a policy rollout video
-- [x] ~~Add an arXiv link (Apr 1)~~
+- [x] ~~Build the project webpage~~
+- [x] ~~Upload a policy rollout video~~
+- [x] ~~Add an arXiv link~~
 
 ### Hardware
 
-- [x] ~~Upload the Fusion source design and STL files (Mar 31)~~
-- [x] ~~Write BOM (Mar 31)~~
-- [x] ~~Write assembly instructions (Apr 1)~~
+- [x] ~~Upload the Fusion source design and STL files~~
+- [x] ~~Write BOM~~
+- [x] ~~Write assembly instructions~~
 <!-- - [ ] Write "Modifying Source Design" -->
 
 <!--

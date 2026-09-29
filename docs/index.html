@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
@@ -19,7 +18,7 @@
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script src="./static/js/index.js?v=20260929"></script>
 </head>
 
 <body>
@@ -296,11 +295,32 @@
               non-directional controller tactile feedback, suggesting that HapCompass can improve demonstration
               quality for downstream learning.
             </p>
+            <p>
+              We trained each policy on 10 demonstrations collected under its respective feedback condition. The
+              policies use tactile signals and robot proprioception as inputs, with separate MLP-based encoders whose
+              outputs are concatenated and passed to an MLP action decoder that predicts chunks of relative robot
+              motion. Each policy was evaluated over 10 rollout trials.
+            </p>
           </div>
 
           <div class="columns is-centered mt-5">
             <div class="column">
               <img src="static/images/Table-2.png" alt="Imitation learning evaluation results" />
+            </div>
+          </div>
+
+          <div class="columns is-centered mt-5">
+            <div class="column">
+              <video id="policy-rollout-video" class="policy-rollout-video" autoplay controls muted loop playsinline
+                preload="metadata" poster="static/images/key-insertion-policy-rollout-poster.jpg"
+                aria-label="Key insertion rollout by the policy trained on HapCompass demonstrations">
+                <source src="static/videos/key-insertion-policy-rollout.mp4" type="video/mp4">
+              </video>
+              <p class="figure-note has-text-centered">
+                Successful rollout of the imitation-learning policy trained on 10 demonstrations collected with
+                HapCompass directional tactile feedback (C4). The MLP-based policy uses tactile signals and robot
+                proprioception as inputs and predicts chunks of relative robot motion.
+              </p>
             </div>
           </div>
         </div>

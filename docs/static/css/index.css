@@ -82,6 +82,14 @@ body {
   line-height: 1.4;
 }
 
+.policy-rollout-video {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
 
 .publication-title {
 }
